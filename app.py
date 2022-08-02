@@ -22,7 +22,7 @@ def reply():
 
     text = request.form.get("Body")
     number = request.form.get("From")
-    number = number.replace("whatsapp:", "")
+    #number = number.replace("whatsapp:", "")
     #msg = response.message(f"Thanks for contacting me. you have sent '{text}' from {number}")
 
     user = users.find_one({"number": number})
